@@ -8,3 +8,6 @@
 - Created visualization tools for audio waveforms, Mel-spectrograms, training history, and model performance metrics to enhance interpretability
 - Applied transfer learning techniques with TensorFlow to optimize training on limited audio data while maintaining high classification accuracy
 
+<br>
+To run the project, install required libraries using `pip install -r requirements.txt`.
+And then, simply run the Music_Genre_App.py file using the cmd `streamlit Music_Genre_App.py`.
