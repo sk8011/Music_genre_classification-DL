@@ -9,5 +9,5 @@
 - Applied transfer learning techniques with TensorFlow to optimize training on limited audio data while maintaining high classification accuracy
 
 <br>
-To run the project, install required libraries using `pip install -r requirements.txt`.
-And then, simply run the Music_Genre_App.py file using the cmd `streamlit Music_Genre_App.py`.
+To run the project, install required libraries using <code>pip install -r requirements.txt</code>.
+And then, simply run the Music_Genre_App.py file using the cmd <code>streamlit Music_Genre_App.py</code>.
