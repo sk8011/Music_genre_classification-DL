@@ -12,4 +12,4 @@
 To run the project, install required libraries using <code>pip install -r requirements.txt</code>.
 And then, simply run the Music_Genre_App.py file using the cmd <code>streamlit run Music_Genre_App.py</code>.
 <br>
-(make sure to include the mp3 file in the folder *Test_Image* that you want to use for prediction)
+(make sure to include the mp3 file in the folder <strong>Test_Image</strong> that you want to use for prediction)
