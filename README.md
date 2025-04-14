@@ -13,3 +13,5 @@ To run the project, install required libraries using <code>pip install -r requir
 And then, simply run the Music_Genre_App.py file using the cmd <code>streamlit run Music_Genre_App.py</code>.
 <br>
 (make sure to include the mp3 file in the folder <strong>Test_Image</strong> that you want to use for prediction)
+
+> because of the size limit of 25MB for uploading of file on github, i wasn't able to upload the model so kindly run the .ipynb file to get the required model for prediction.
