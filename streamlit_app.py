@@ -5,6 +5,7 @@ import librosa
 from matplotlib import pyplot
 import numpy as np
 from tensorflow.image import resize
+import tempfile
 
 #Function
 @st.cache_resource()
@@ -131,9 +132,12 @@ elif(app_mode=="About Project"):
 elif(app_mode=="Prediction"):
     st.header("Model Prediction")
     test_mp3 = st.file_uploader("Upload an audio file", type=["mp3"])
+
     if test_mp3 is not None:
-            filepath = './'+test_mp3.name
-            
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tmp_file:
+            tmp_file.write(test_mp3.read())
+            tmp_path = tmp_file.name
+                
 
     #Show Button
     if(st.button("Play Audio")):
@@ -142,7 +146,7 @@ elif(app_mode=="Prediction"):
     #Predict Button
     if(st.button("Predict")):
       with st.spinner("Please Wait.."):       
-        X_test = load_and_preprocess_data(filepath)
+        X_test = load_and_preprocess_data(tmp_path)
         result_index = model_prediction(X_test)
         st.balloons()
         label = ['blues', 'classical','country','disco','hiphop','jazz','metal','pop','reggae','rock']
