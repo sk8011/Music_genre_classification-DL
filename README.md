@@ -31,14 +31,7 @@ By converting audio signals into Mel-spectrograms, the model captures both spect
    cd Music_genre_classification-DL
    ```
 
-2. **Create a virtual environment (optional but recommended)**:
-
-   ```bash
-   python -m venv env
-   source env/bin/activate  # On Windows: env\Scripts\activate
-   ```
-
-3. **Install the required packages**:
+2. **Install the required packages**:
 
    ```bash
    pip install -r requirements.txt
