@@ -86,7 +86,7 @@ if(app_mode=="Home"):
 
     st.markdown(''' ## Welcome to the,\n
     ## Music Genre Classification System! 🎶🎧''')
-    image_path = "./music_genre_home.png"
+    image_path = "./frontend/music_genre_home.png"
     st.image(image_path, use_container_width=True)
     st.markdown("""
 **Our goal is to help in identifying music genres from audio tracks efficiently. Upload an audio file, and our system will analyze it to detect its genre. Discover the power of AI in music analysis!**
