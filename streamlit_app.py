@@ -86,7 +86,7 @@ if(app_mode=="Home"):
     st.markdown(''' ## Welcome to the,\n
     ## Music Genre Classification System! 🎶🎧''')
     image_path = "music_genre_home.png"
-    st.image(image_path, use_column_width=True)
+    st.image(image_path, use_container_width=True)
     st.markdown("""
 **Our goal is to help in identifying music genres from audio tracks efficiently. Upload an audio file, and our system will analyze it to detect its genre. Discover the power of AI in music analysis!**
 
@@ -132,7 +132,7 @@ elif(app_mode=="Prediction"):
     st.header("Model Prediction")
     test_mp3 = st.file_uploader("Upload an audio file", type=["mp3"])
     if test_mp3 is not None:
-            filepath = 'Test_Music/'+test_mp3.name
+            filepath = './'+test_mp3.name
             
 
     #Show Button
